@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         User newUser = new User();
         newUser.username = user.getDisplayName();
         newUser.email = user.getEmail();
-        mDatabase.child("User").child(user.getUid()).setValue(newUser).addOnSuccessListener(new OnSuccessListener<Void>() {
+        mDatabase.setValue(newUser).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Intent signInIntent = new Intent(LoginActivity.this, MainActivity.class);
