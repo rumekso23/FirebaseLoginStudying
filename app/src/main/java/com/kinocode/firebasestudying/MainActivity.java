@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
+    /**
+     * menampilkan username dari firebase realtime database
+     * menampilkan email dari firebase realtime database
+     * menampilkan photo profil dari gmail atau google sign in*/
     private void loadfromdatabase(){
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -85,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
                     String email = user.getEmail();
                     tvUsername.setText(username);
                     tvEmail.setText(email);
+
+                    //load photo profil gmail
                     Glide.with(getApplicationContext()).load(firebaseUser.getPhotoUrl()).into(imgUser);
 
                 }
