@@ -24,7 +24,10 @@
         android:textSize="12pt"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_margin="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
 
 
     <TextView
@@ -33,10 +36,37 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:text="USERNAME"
-        android:textSize="14pt"
+        android:textSize="12pt"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_margin="20dp"/>
+        android:layout_margin="10dp"/>
+
+    <Button
+    android:id="@+id/btn_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:text="Edit"
+    android:textSize="10pt"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:text="sign out"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_dark"/>
+
 
 
 </LinearLayout>
